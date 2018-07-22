@@ -1,3 +1,3 @@
 # Phone-Demographic
 
-A user can check using this program whether two phone are from the same state (USA)
+A program that can determine whether two phone are from the same state (USA)
