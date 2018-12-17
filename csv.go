@@ -16,6 +16,7 @@ func differentiate(number string) (string, string) {
 	var NXX = ""
 
 	// If statements for different number lengths
+	// Number length can vary based on an iternational number area codes
 	if(length == 10){
 		for i, r := range a {
 			if i < 3 {
