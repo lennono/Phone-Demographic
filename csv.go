@@ -78,7 +78,7 @@ func main() {
 	}
 
 	ts := string(body)
-	text := string(`<td headers="olocalcall" data-label="Local call+">Y</td>`) // I figured it was easier to do this way, no need to work through the html document
+	text := string(`<td headers="olocalcall" data-label="Local call+">Y</td>`) // No need to work through the html document, returns either true or false, based on if the call was local or not 
 
 	if strings.Contains(ts, text) == true {
 		fmt.Print("Local call")
