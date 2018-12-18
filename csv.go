@@ -65,7 +65,7 @@ func main() {
 	NPA, NXX = differentiate(Full_Terminating_number)
 	cliNPA, cliNXX = differentiate(Originating_Number)
 
-	url := fmt.Sprintf("http://localcallingguide.com/lca_rcdist.php?npa1=%s&nxx1=%s&npa2=%s&nxx2=%s", cliNPA, cliNXX, NPA, NXX)
+	url := fmt.Sprintf("http://localcallingguide.com/lca_rcdist.php?npa1=%s&nxx1=%s&npa2=%s&nxx2=%s", cliNPA, cliNXX, NPA, NXX) // APi endpoint, returns html doc
 	resp, err := http.Get(url)
 
 	if err != nil {
